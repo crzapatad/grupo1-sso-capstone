@@ -49,7 +49,6 @@ El proyecto consiste en la creación de un sistema  integral para la gestión de
 ### Frontend (App móvil)
 ![Pantalla de Login](images/stack4.png) 
 
-
 ### Base de Datos
 - La solución propuesta utiliza Cloud Firestore como sistema de gestión de bases de datos. Firestore es una base de datos NoSQL orientada a documentos que forma parte del ecosistema de Google Cloud Platform (GCP). Su adopción responde a la necesidad de contar con una plataforma altamente escalable, capaz de soportar grandes volúmenes de reportes de seguridad, actualizaciones en tiempo real y una arquitectura basada en servicios desacoplados.
 
@@ -135,17 +134,9 @@ La combinación de cifrado de comunicaciones, autenticación basada en identidad
 
 ## Arquitectura
 
-El sistema sigue una **arquitectura en capas**:
-
-- **Capa de Presentación**: Next.js con componentes React
-- **Capa de Controladores**: Express routes y controllers
-- **Capa de Servicios**: Lógica de negocio y validaciones
-- **Capa de Datos**: Sequelize ORM con PostgreSQL
-- **Capa de Auditoría**: Triggers de base de datos para trazabilidad
-
-**Visión General de la Arquitectura**
-
 La solución propuesta corresponde a una arquitectura distribuida de múltiples capas orientada a servicios, diseñada para soportar la gestión de riesgos e incidentes de Seguridad y Salud Ocupacional (SSO). La arquitectura se basa en una separación clara entre la capa de presentación, la capa de servicios de negocio y la capa de datos, permitiendo escalabilidad, mantenibilidad y facilidad de integración con futuros sistemas.
+
+![Capas arquitectura](images/CapasArquitectura.png)
 
 La capa de presentación está compuesta por aplicaciones cliente web y móvil, desarrolladas para permitir el acceso al sistema desde distintos dispositivos. Estas aplicaciones consumen funcionalidades a través de APIs expuestas por los servicios backend.
 
@@ -155,109 +146,7 @@ Finalmente, la capa de datos utiliza una base de datos NoSQL basada en Cloud Fir
 
 La autenticación y autorización son delegadas a un proveedor de identidad externo mediante Keycloak, permitiendo una administración centralizada de usuarios, roles y permisos.
 
-**Capas de la Arquitectura**
 
-La arquitectura se encuentra organizada en las siguientes capas:
-
-**1)Capa de Clientes**
-
-Corresponde a las aplicaciones utilizadas por los usuarios finales para interactuar con el sistema. Está conformada por:
-
-- Aplicación Web Administrativa desarrollada en React.
-
-- Aplicación Móvil desarrollada en React Native para dispositivos Android e iOS.
-
-Estas aplicaciones permiten registrar riesgos, gestionar incidentes, revisar indicadores, generar reportes y recibir alertas operacionales.
-
-**Capa de API Gateway**
-
-Actúa como punto único de entrada hacia los servicios backend.
-
-Sus principales responsabilidades son:
-
-- Autenticación mediante JWT.
-
-- Enrutamiento de solicitudes.
-
-- Terminación de conexiones HTTPS.
-  
-- Control de acceso basado en roles.
-- 
-- Aplicación de políticas de seguridad.
-
-
-**Capa de Microservicios**
-
-La lógica de negocio se encuentra distribuida en múltiples microservicios especializados:
-
-Microservicio	Responsabilidad Principal
-auth-service	Gestión de autenticación, validación de tokens y control de acceso.
-reports-service	Administración de reportes de actos y condiciones inseguras.
-incidents-service	Gestión completa del ciclo de vida de incidentes y acciones correctivas.
-zones-service	Administración de zonas, áreas operativas y gemelos digitales de planta.
-alerts-service	Generación y seguimiento de alertas automáticas y manuales.
-dashboard-service	Procesamiento de indicadores, mapas de calor y métricas de desempeño.
-export-service	Generación de exportaciones en formatos PDF, XLSX y CSV.
-
-Cada microservicio posee su propio ciclo de despliegue y expone interfaces REST independientes, permitiendo evolucionar cada componente sin afectar al resto del sistema.
-
-Capa de Datos
-
-La persistencia de información se encuentra compuesta por:
-
-Cloud Firestore como base de datos principal.
-Cloud Storage para almacenamiento de archivos binarios.
-Colecciones y subcolecciones estructuradas por organización cliente.
-
-Esta organización permite implementar un modelo multiempresa (multi-tenant), garantizando aislamiento lógico de los datos entre organizaciones.
-
-Capa de Observabilidad
-
-La plataforma incorpora mecanismos de monitoreo y trazabilidad mediante:
-
-Cloud Logging.
-Cloud Monitoring.
-Error Reporting.
-
-Estas herramientas permiten supervisar el comportamiento de los servicios, detectar errores y analizar el rendimiento operacional del sistema.
-
-Capa CI/CD
-
-El proceso de integración y despliegue continuo considera:
-
-Cloud Build para compilación automatizada.
-Artifact Registry para almacenamiento de imágenes de contenedores.
-Cloud Run para despliegue de servicios.
-
-Esta estrategia permite realizar actualizaciones frecuentes con mínimos tiempos de indisponibilidad.
-
-**Principios de Diseño Arquitectónico**
-
-La arquitectura se diseñó siguiendo una serie de principios fundamentales:
-
-**API-First**
-
-Toda la funcionalidad del sistema es accesible mediante APIs REST documentadas. Esto permite reutilizar servicios desde múltiples clientes y facilita futuras integraciones.
-
-**Stateless Services**
-
-Los microservicios no mantienen estado de sesión local. La información de autenticación se transporta mediante tokens JWT y los datos persistentes se almacenan en Firestore.
-
-**Multi-Tenancy**
-
-Cada organización cliente mantiene sus datos aislados mediante identificadores únicos asociados a todas las entidades almacenadas.
-
-**Separación de Responsabilidades**
-
-Cada microservicio implementa una única responsabilidad de negocio, reduciendo dependencias y facilitando el mantenimiento del sistema.
-
-**Inmutabilidad de Eventos**
-
-Los eventos asociados a incidentes y reportes se almacenan como registros históricos, permitiendo mantener trazabilidad completa sobre los cambios realizados.
-
-**Separación de Almacenamiento**
-
-Los documentos y archivos multimedia son almacenados en Cloud Storage, mientras que Firestore conserva únicamente los metadatos y referencias necesarias para su acceso.
 
 **Beneficios de la Arquitectura Propuesta**
 La arquitectura planteada proporciona múltiples beneficios para la organización:
