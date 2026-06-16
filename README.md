@@ -160,6 +160,9 @@ La arquitectura planteada proporciona múltiples beneficios para la organizació
 - Soporte para crecimiento futuro del número de usuarios y organizaciones.
 
 En conjunto, esta arquitectura permite construir una plataforma robusta, moderna y preparada para soportar las necesidades operacionales de gestión de riesgos e incidentes en entornos industriales y corporativos.
+## **Diseño del sistema**
+
+
 
 ## Metodología ágil basada en Scrum
 
