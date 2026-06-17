@@ -172,27 +172,7 @@ En conjunto, esta arquitectura permite construir una plataforma robusta, moderna
 
 El proyecto fue desarrollado siguiendo una metodología ágil basada en Scrum, permitiendo la construcción incremental de la solución y la incorporación continua de mejoras a medida que se obtenía retroalimentación sobre el funcionamiento del sistema. Esta metodología favoreció la flexibilidad, la adaptación a cambios en los requerimientos y la validación progresiva de las funcionalidades implementadas.
 
-Las principales fases del desarrollo fueron las siguientes:
-
-**Fase 1: Levantamiento de Requerimientos y Planificación**
-
-Se identificaron las necesidades del sistema de gestión de riesgos SSO, definiendo los objetivos del proyecto, los usuarios involucrados, las funcionalidades esperadas y el alcance de la solución. Asimismo, se establecieron las historias de usuario y los requerimientos funcionales y no funcionales que guiarían el desarrollo.
-
-**Fase 2: Diseño de la Solución**
-
-Se diseñó la arquitectura general del sistema, definiendo las tecnologías a utilizar, la estructura de microservicios, el modelo de datos y los prototipos de interfaz (wireframes). También se establecieron los mecanismos de autenticación, seguridad y comunicación entre componentes.
-
-**Fase 3: Desarrollo Iterativo**
-
-Las funcionalidades fueron implementadas de manera incremental mediante iteraciones cortas. Durante esta etapa se desarrollaron los componentes del frontend, los servicios backend, la integración con la base de datos y las diferentes funcionalidades del sistema, tales como el registro de riesgos, la gestión de incidentes, las alertas y los paneles de visualización.
-
-**Fase 4: Integración y Pruebas**
-
-Una vez desarrollados los distintos componentes, se realizaron pruebas funcionales para verificar el correcto funcionamiento de la aplicación. Se validaron los flujos principales del sistema, la comunicación entre servicios, la persistencia de datos y la experiencia de usuario tanto en la aplicación web como móvil.
-
-**Fase 5: Despliegue y Documentación**
-
-Finalmente, se preparó la solución para su despliegue en el entorno definido, se elaboró la documentación técnica correspondiente y se consolidaron los entregables del proyecto. Esta etapa incluyó la generación de manuales, especificaciones del stack tecnológico y la preparación del repositorio para su presentación final.
+[Sprints del proyecto](https://docs.google.com/document/d/1-SLClQnu3aSi8PBc9mLsyNyOlniIZw2O/edit?usp=drive_link&ouid=100174144628055064986&rtpof=true&sd=true)
 
 
 ## Licencia
