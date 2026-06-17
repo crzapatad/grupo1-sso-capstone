@@ -7,8 +7,6 @@ El proyecto consiste en la creación de un sistema  integral para la gestión de
 
 ## Características Principales
 
-### Módulos Funcionales 
-
 
 - **Reporte de Peligros de Seguridad**: Los trabajadores pueden reportar actos inseguros y condiciones inseguras mediante fotografías, ubicación geográfica y descripciones detalladas.
 
