@@ -125,7 +125,7 @@ La combinación de cifrado de comunicaciones, autenticación basada en identidad
 - Tomás Figueroa
 - Cristóbal Zapata
 
-## Documentación Adicional <especificar la documentación adicional que se incorpora, abajo son ejemplos>
+## Documentación Adicional
 
 - **ERS**
 - **Diagrama de Clases**
