@@ -14,7 +14,7 @@ El proyecto consiste en la creación de un sistema  integral para la gestión de
 
 - **Seguimiento de Estado en Tiempo Real**: Permite monitorear el estado de un reporte durante todo su ciclo de vida (enviado → en revisión → acción asignada → cerrado).
 
-- **Monitoreo de SLA**: Indicadores visuales que muestran si los reportes están dentro del plazo, en riesgo de incumplimiento o vencidos.
+- **Monitoreo de cumplimiento de plazos**: Indicadores visuales que muestran si los reportes están dentro del plazo, en riesgo de incumplimiento o vencidos.
 
 - **Estadísticas Personales de Seguridad**: Permite visualizar tasas de efectividad, rachas de participación y métricas relacionadas con el reporte de Incidentes y Actos Peligrosos (IAP).
 
@@ -24,24 +24,20 @@ El proyecto consiste en la creación de un sistema  integral para la gestión de
 
 ### Funcionalidades Adicionales
 
-- **Integración con IAP**: Gestión especializada para reportes de IAP (Incidentes y Actos Peligrosos u Oportunidades de Mejora, según la definición de la organización).
-- **Acciones Correctivas**: Permite asignar, monitorear y dar seguimiento a acciones correctivas, incluyendo fechas límite y estado de cumplimiento.
-- **Comentarios y Discusión**: Facilita la colaboración entre los miembros del equipo mediante comentarios asociados a cada reporte.
-- **Clasificación Jerárquica de Reportes**: Los reportes pueden clasificarse como actos inseguros o condiciones inseguras para mejorar su análisis y tratamiento.
+- **Medidas de mitigación**: Permite asignar, monitorear y dar seguimiento a acciones correctivas, incluyendo fechas límite y estado de cumplimiento.
+- **Comentar y Discutir**: Facilita la colaboración entre los miembros del equipo mediante comentarios asociados a cada reporte.
+- **Clasificar los reportes**: Los reportes pueden clasificarse como actos inseguros o condiciones inseguras para mejorar su análisis y tratamiento.
 - **Soporte para Múltiples Turnos**: Permite registrar incidentes y observaciones correspondientes a turnos de mañana, tarde o noche.
-- **Tema Industrial Oscuro**: Interfaz diseñada específicamente con una temática oscura y acentos en color naranja de seguridad, optimizando la visibilidad y la experiencia de uso en entornos industriales.
+- **Modo oscuro**: Interfaz diseñada específicamente con una temática oscura y acentos en color naranja de seguridad, optimizando la visibilidad y la experiencia de uso en entornos industriales.
 
 
 ## Stack Tecnológico
 
 
-
 ### Backend
 ![Pantalla de Login](images/stack2.png)
 - 
-- 
-- 
-- 
+
 
 ### Frontend (Página web)
 ![Pantalla de Login](images/stack3.png)
@@ -50,9 +46,9 @@ El proyecto consiste en la creación de un sistema  integral para la gestión de
 ![Pantalla de Login](images/stack4.png) 
 
 ### Base de Datos
-- La solución propuesta utiliza Cloud Firestore como sistema de gestión de bases de datos. Firestore es una base de datos NoSQL orientada a documentos que forma parte del ecosistema de Google Cloud Platform (GCP). Su adopción responde a la necesidad de contar con una plataforma altamente escalable, capaz de soportar grandes volúmenes de reportes de seguridad, actualizaciones en tiempo real y una arquitectura basada en servicios desacoplados.
+- Para este proyecto usamos Cloud Firestore como sistema de gestión de bases de datos. Firestore es una base de datos NoSQL, encargada de almacenar datos no estructurados (como contenido multimedia, imágenes) que forma parte del ecosistema de Google Cloud Platform (GCP). Hemos escogido Firestore debido a su escalabilidad y su capacidad de almacenamiento para los reportes, además de que nuestro proyecto es un SaaS (software como un servicio).
 
-Una de las principales ventajas de Firestore es su capacidad de escalamiento horizontal automático, permitiendo aumentar la capacidad del sistema sin requerir configuraciones manuales de infraestructura. Esto resulta especialmente relevante para una aplicación de gestión de riesgos laborales, donde el volumen de reportes puede variar significativamente según la cantidad de empresas, faenas y usuarios conectados.
+Una de las principales ventajas de Firestore es su capacidad de escalamiento horizontal automático. El escalamiento horizontal automático de Firestore significa que, si la aplicación crece y comienzan a utilizarla muchas más empresas y usuarios, Google aumenta la capacidad necesaria detrás de escena sin que nosotros tengamos que preocuparnos por administrar servidores adicionales.
 
 Adicionalmente, Firestore ofrece integración nativa con servicios de Google Cloud, simplificando los mecanismos de autenticación y autorización mediante cuentas de servicio utilizadas por los microservicios desplegados en Cloud Run. Asimismo, dispone de soporte para operaciones asíncronas a través del SDK oficial de Python, facilitando su integración con servicios desarrollados en FastAPI y ejecutados mediante Uvicorn.
 
