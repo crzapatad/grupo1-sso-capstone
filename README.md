@@ -5,6 +5,24 @@
 El proyecto consiste en la creación de un sistema  integral para la gestión de riesgos faenas. Para contextualizar, existen muchos entornos de trabajo en que los trabajadores están expuestos a riesgos que puedan dañar su integridad, generalmente riesgos físicos. Pueden ser varios escenarios, como inundaciones, cortes de luz, incendios, derrame de químicos, incluso asaltos. Para poder registrar estos incidentes, lo que hace el trabajador que trabaja en esos entornos es registrar los hechos a mano. Es decir, los reportes que ellos elaboran lo realizan a papel, ya sea en blanco o con un formato de reporte otorgado por la empresa. Una vez hecho el reporte, el trabajador debe enviarlo a su correspondiente supervisor (presencialmente) para que éste pueda analizar el caso y resolverlo. 
 ¿Cuál es el problema con esto? Que todo este proceso consume tiempo, requiere logística y que la trazabilidad no es del todo seguro. Asimismo, el proceso descrito depende de objetos fisicos como los registros en papel, y no hay una base de datos que albergue dichos registros, y a la vez, consultar, actualizar, seleccionar o eliminar. Al haber dependencia de objetos físicos, ello requiere salvaguardarlos de una forma más engorrosa, y al acumularse con el tiempo, resulta más dificil consultar en un futuro un determinado reporte.
 
+**Solución propuesta**
+
+La solución propuesta consiste en digitalizar los procesos que hemos señalado anteriormente. Para ello, queremos elaborar una plataforma tecnológica que permita una comunicación más eficaz y rápida entre los actores señalados que son el trabajador y el supervisor. La plataforma está compuesta por una aplicacion movil (utilizada por los trabajadores) y una aplicacion web (utilizada por los supervisores), cada una diseñada con sus respectivas interfaces. Para permitir una comunicación entre estas aplicaciones, usaremos una arquitectura de microservicio (API). 
+Las funcionalidades de estas interfaces las señalaremos a continuacion para cada aplicación:
+
+1) App móvil: la app movil permitirá al trabajador registrar evidencias. Podrá subir tanto imagenes como texto (ya que usaremos una base de datos no estructurada como firebase). Asimismo, el trabajador podrá iniciar sesión, determinar el nivel de gravedad de un incidente antes de enviar la evidencia, podrá hacer seguimiento de su situación en tiempo real (si está pendiente, o finalizado, cuyo estado dependerá del supervisor).
+  
+2) App Web: la app web permitirá al supervisor visualizar un dashboard de los reportes que ha recibido a lo largo del tiempo. En dicho dashboard puede ver un mapa de calor en el que cada área coloreada representa un incidente reportado y enviado por parte de un trabajador. También podrá actualizar el estado de un reporte, siendo notificada al trabajador instantaneamente. El supervisor también puede registrarse e iniciar sesión en la app web.
+
+Asimismo, disponemos de un wireframe para ambas aplicaciones, siguiendo el diseño visual propuesto por Alloxentric.
+
+
+**Beneficios de implementar un sistema digitalizado de gestión de riesgos en faenas**
+
+1) permite a la empresa ahorrar gastos al reducir el tiempo en este proceso. 
+2) permite una comunicación más eficaz y rápida entre los actores señalados que son el trabajador y el supervisor. 
+
+
 ## Características Principales
 
 
