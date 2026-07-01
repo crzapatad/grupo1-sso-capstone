@@ -191,4 +191,4 @@ El proyecto fue desarrollado siguiendo una metodología ágil basada en Scrum, p
 Este proyecto fue desarrollado como parte del proyecto APT (Aplicación de Proyecto Tecnológico) para Alloxentric.
 
 **Versión**: 1.0
-**Última actualización**: 14-06-2026
+**Última actualización**: 01-07-2026
