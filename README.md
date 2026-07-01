@@ -184,7 +184,7 @@ En conjunto, esta arquitectura permite construir una plataforma robusta, moderna
 El proyecto fue desarrollado siguiendo una metodología ágil basada en Scrum, permitiendo la construcción incremental de la solución y la incorporación continua de mejoras a medida que se obtenía retroalimentación sobre el funcionamiento del sistema. Esta metodología favoreció la flexibilidad, la adaptación a cambios en los requerimientos y la validación progresiva de las funcionalidades implementadas.
 
 
-Sprint 1: Fundación Arquitectónica e Infraestructura Base
+## Sprint 1: Fundación Arquitectónica e Infraestructura Base
 
 Información General
 
@@ -327,23 +327,6 @@ Entregables:
 - Primer despliegue automatizado.
 - Suite inicial de pruebas implementada.
 
----
-
-Sprint Backlog
-
-Tarea| Responsable| Estado
-Configuración GCP| DevOps| Pendiente
-Configuración Firestore| Backend| Pendiente
-Configuración Keycloak| Backend| Pendiente
-Creación microservicios| Backend| Pendiente
-Configuración React| Frontend| Pendiente
-Configuración React Native| Mobile| Pendiente
-Configuración Docker| Backend| Pendiente
-Configuración Cloud Build| DevOps| Pendiente
-Configuración Cloud Run| DevOps| Pendiente
-Configuración Testing| QA/Backend| Pendiente
-
----
 
 Definition of Done (DoD)
 
@@ -366,7 +349,7 @@ Al finalizar el Sprint 1, el proyecto dispondrá de una plataforma tecnológica 
 
 
 
-Sprint 2: Implementación de Funcionalidades Operacionales
+## Sprint 2: Implementación de Funcionalidades Operacionales
 
 Información General
 
@@ -535,22 +518,6 @@ Entregables:
 
 ---
 
-Sprint Backlog
-
-Tarea| Responsable| Estado
-Implementación reports-service| Backend| Pendiente
-Integración Cloud Storage| Backend| Pendiente
-Flujo de reporte móvil| Mobile| Pendiente
-Implementación incidents-service| Backend| Pendiente
-Tabla de incidentes| Frontend| Pendiente
-Sistema de comentarios| Backend| Pendiente
-Implementación zones-service| Backend| Pendiente
-Editor gráfico de zonas| Frontend| Pendiente
-Implementación alerts-service| Backend| Pendiente
-Notificaciones push| Mobile| Pendiente
-
----
-
 Definition of Done (DoD)
 
 El Sprint 2 se considerará finalizado cuando:
@@ -572,7 +539,7 @@ Al finalizar el Sprint 2, el sistema SSO dispondrá de su núcleo operacional co
 
 
 
-Sprint 3: Analítica, Visualización y Generación de Reportes
+## Sprint 3: Analítica, Visualización y Generación de Reportes
 
 Información General
 
@@ -754,22 +721,6 @@ Entregables:
 
 ---
 
-Sprint Backlog
-
-Tarea| Responsable| Estado
-Implementación dashboard-service| Backend| Pendiente
-Desarrollo de KPIs| Backend| Pendiente
-Dashboard ejecutivo| Frontend| Pendiente
-Sistema de gráficos| Frontend| Pendiente
-Algoritmos de heatmaps| Backend| Pendiente
-Visualización espacial| Frontend| Pendiente
-Implementación export-service| Backend| Pendiente
-Generación PDF/XLSX| Backend| Pendiente
-Logging y monitoreo| DevOps| Pendiente
-Optimización de consultas| Backend| Pendiente
-
----
-
 Definition of Done (DoD)
 
 El Sprint 3 se considerará finalizado cuando:
@@ -790,7 +741,7 @@ Incremento Entregado
 Al finalizar el Sprint 3, el sistema SSO dispondrá de capacidades avanzadas de análisis y apoyo a la toma de decisiones, permitiendo transformar datos operacionales en información estratégica mediante dashboards ejecutivos, mapas de calor, indicadores de riesgo y generación automatizada de reportes, consolidando la plataforma como una herramienta integral de gestión de riesgos industriales.
 
 
-Sprint 4: Optimización, Seguridad y Despliegue Productivo
+## Sprint 4: Optimización, Seguridad y Despliegue Productivo
 
 Información General
 
@@ -990,22 +941,6 @@ Entregables:
 - Manuales de usuario.
 - Monitoreo operativo.
 - Entrega final del proyecto.
-
----
-
-Sprint Backlog
-
-Tarea| Responsable| Estado
-Testing backend| Backend/QA| Pendiente
-Testing frontend| Frontend/QA| Pendiente
-Testing funcional| QA| Pendiente
-Hardening de seguridad| Backend| Pendiente
-Optimización Firestore| Backend| Pendiente
-Optimización frontend| Frontend| Pendiente
-Documentación técnica| Arquitectura| Pendiente
-Manuales de usuario| Equipo funcional| Pendiente
-Configuración producción| DevOps| Pendiente
-Despliegue final| DevOps| Pendiente
 
 ---
 
