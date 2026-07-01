@@ -139,9 +139,6 @@ La combinación de cifrado de comunicaciones, autenticación basada en identidad
 
 ## Documentación Adicional
 
-- **ERS**
-- **Diagrama de Clases**
-- **Modelo de Datos**
 - [Carta Gantt](https://docs.google.com/spreadsheets/d/1WdQG8cgWP_Q8y35ntlekh_Nq8pTK4AdS/edit?gid=1137986524#gid=1137986524)
 
 ## Arquitectura
