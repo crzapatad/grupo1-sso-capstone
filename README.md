@@ -53,9 +53,11 @@ Asimismo, disponemos de un wireframe para ambas aplicaciones, siguiendo el dise�
 ### Backend
 ![Pantalla de Login](images/stack2.png)
 - 
-
+El backend del Sistema Integral de Gestión de Riesgos (SSO) constituye el núcleo operativo de la plataforma, siendo responsable de procesar la información proveniente de las aplicaciones web y móviles, ejecutar la lógica de negocio, gestionar la seguridad del sistema y coordinar el almacenamiento de datos y archivos. La arquitectura implementada se basa en un modelo de microservicios desplegados sobre infraestructura cloud, lo que permite alcanzar altos niveles de escalabilidad, disponibilidad y mantenibilidad.
 
 ### Frontend (Página web)
+
+El frontend del Sistema Integral de Gestión de Riesgos (SSO) constituye la capa de interacción entre los usuarios y la plataforma, proporcionando interfaces especializadas para distintos perfiles operativos y administrativos. La arquitectura frontend fue diseñada bajo un enfoque multiplataforma, compuesto por una aplicación web orientada a la gestión y supervisión, y una aplicación móvil destinada al personal operativo en terreno. Ambas aplicaciones comparten principios de diseño, contratos de API y mecanismos de autenticación, permitiendo mantener coherencia funcional y facilitar la evolución del sistema.
 ![Pantalla de Login](images/stack3.png)
 
 ### Frontend (App móvil)
