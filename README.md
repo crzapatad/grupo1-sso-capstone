@@ -183,7 +183,851 @@ En conjunto, esta arquitectura permite construir una plataforma robusta, moderna
 
 El proyecto fue desarrollado siguiendo una metodología ágil basada en Scrum, permitiendo la construcción incremental de la solución y la incorporación continua de mejoras a medida que se obtenía retroalimentación sobre el funcionamiento del sistema. Esta metodología favoreció la flexibilidad, la adaptación a cambios en los requerimientos y la validación progresiva de las funcionalidades implementadas.
 
-[Sprints del proyecto](https://docs.google.com/document/d/1-SLClQnu3aSi8PBc9mLsyNyOlniIZw2O/edit?usp=drive_link&ouid=100174144628055064986&rtpof=true&sd=true)
+
+Sprint 1: Fundación Arquitectónica e Infraestructura Base
+
+Información General
+
+- Sprint: Sprint 1
+- Duración: 3 semanas
+- Objetivo del Sprint: Implementar la infraestructura inicial del sistema SSO, configurar la arquitectura de microservicios, establecer los mecanismos de autenticación y desarrollar los componentes fundamentales del frontend y backend.
+
+---
+
+Objetivos del Sprint
+
+Durante este primer sprint, el equipo se enfocará en construir las bases tecnológicas del proyecto, permitiendo que los siguientes sprints se concentren principalmente en el desarrollo funcional. Los objetivos específicos son:
+
+- Configurar el entorno de desarrollo y repositorios.
+- Implementar la arquitectura inicial de microservicios.
+- Configurar la autenticación mediante Keycloak.
+- Desarrollar la estructura base del frontend web y móvil.
+- Implementar la conexión con Google Cloud Platform.
+- Configurar Firestore y Cloud Storage.
+- Establecer el pipeline inicial de integración y despliegue continuo (CI/CD).
+
+---
+
+Product Backlog Seleccionado
+
+ID| Historia de Usuario| Prioridad
+HU-01| Como administrador, deseo autenticar usuarios para garantizar acceso seguro al sistema| Alta
+HU-02| Como desarrollador, deseo disponer de la arquitectura base de microservicios para facilitar el desarrollo futuro| Alta
+HU-03| Como usuario, deseo visualizar una interfaz inicial de acceso al sistema| Alta
+HU-04| Como administrador, deseo disponer de infraestructura cloud configurada para desplegar los servicios| Alta
+HU-05| Como equipo de desarrollo, deseamos automatizar el proceso de integración y despliegue| Media
+
+---
+
+Actividades Planificadas
+
+Semana 1: Configuración Inicial e Infraestructura
+
+Durante la primera semana se realizarán las actividades orientadas a establecer el entorno tecnológico base:
+
+- Creación y configuración del repositorio Git.
+- Definición de la estrategia de ramas utilizando Git Flow simplificado.
+- Configuración del entorno de desarrollo local.
+- Creación del proyecto en Google Cloud Platform.
+- Configuración inicial de Firestore.
+- Creación y configuración de buckets en Google Cloud Storage.
+- Configuración del entorno de autenticación mediante Keycloak.
+- Definición de estándares de codificación y convenciones del proyecto.
+
+Entregables:
+
+- Repositorio principal configurado.
+- Proyecto GCP operativo.
+- Base de datos Firestore habilitada.
+- Buckets de almacenamiento creados.
+- Servidor Keycloak funcional.
+
+---
+
+Semana 2: Implementación de Arquitectura Base
+
+Durante la segunda semana se implementará la arquitectura principal del backend y frontend.
+
+Backend
+
+- Creación de la estructura inicial de los siete microservicios:
+  - auth-service
+  - reports-service
+  - incidents-service
+  - zones-service
+  - alerts-service
+  - dashboard-service
+  - export-service
+- Configuración de FastAPI.
+- Implementación de arquitectura por capas:
+  - Routers
+  - Services
+  - Repositories
+  - Schemas
+- Configuración de Pydantic y validaciones.
+- Configuración inicial de Docker.
+
+Frontend Web
+
+- Inicialización del proyecto React + TypeScript.
+- Configuración de Tailwind CSS.
+- Configuración de Zustand.
+- Configuración de TanStack Query.
+- Creación del layout principal de la aplicación.
+
+Frontend Móvil
+
+- Inicialización del proyecto React Native.
+- Configuración de navegación.
+- Configuración de almacenamiento local.
+- Creación de pantallas iniciales.
+
+Entregables:
+
+- Arquitectura de microservicios implementada.
+- Frontend web inicial funcional.
+- Aplicación móvil inicial funcional.
+- Contenedores Docker configurados.
+
+---
+
+Semana 3: Autenticación y DevOps
+
+La última semana del sprint estará orientada a seguridad y automatización.
+
+Seguridad
+
+- Integración de Keycloak con backend.
+- Validación de tokens JWT.
+- Implementación de roles y permisos.
+- Configuración de OAuth2/OpenID Connect.
+
+DevOps
+
+- Configuración de Cloud Run.
+- Configuración de Cloud Build.
+- Implementación del pipeline CI/CD:
+  - Lint.
+  - Type checking.
+  - Testing.
+  - Build.
+  - Push.
+  - Deploy.
+
+Testing
+
+- Configuración de pytest.
+- Creación de primeros tests unitarios.
+- Configuración de cobertura mínima.
+
+Entregables:
+
+- Sistema de autenticación operativo.
+- Pipeline CI/CD funcional.
+- Primer despliegue automatizado.
+- Suite inicial de pruebas implementada.
+
+---
+
+Sprint Backlog
+
+Tarea| Responsable| Estado
+Configuración GCP| DevOps| Pendiente
+Configuración Firestore| Backend| Pendiente
+Configuración Keycloak| Backend| Pendiente
+Creación microservicios| Backend| Pendiente
+Configuración React| Frontend| Pendiente
+Configuración React Native| Mobile| Pendiente
+Configuración Docker| Backend| Pendiente
+Configuración Cloud Build| DevOps| Pendiente
+Configuración Cloud Run| DevOps| Pendiente
+Configuración Testing| QA/Backend| Pendiente
+
+---
+
+Definition of Done (DoD)
+
+El Sprint 1 se considerará finalizado cuando se cumplan los siguientes criterios:
+
+- Los siete microservicios estén creados y desplegados.
+- El sistema de autenticación funcione correctamente.
+- La aplicación web permita iniciar sesión.
+- La aplicación móvil permita autenticación básica.
+- Firestore y Cloud Storage se encuentren operativos.
+- El pipeline CI/CD ejecute exitosamente el proceso completo.
+- La cobertura mínima de pruebas alcance un 80%.
+- Toda la documentación técnica inicial haya sido generada.
+
+---
+
+Incremento Entregado
+
+Al finalizar el Sprint 1, el proyecto dispondrá de una plataforma tecnológica completamente operativa, incluyendo infraestructura cloud, arquitectura de microservicios, autenticación centralizada, aplicaciones cliente iniciales y mecanismos automatizados de despliegue, proporcionando una base sólida para el desarrollo funcional de los siguientes sprints.
+
+
+
+Sprint 2: Implementación de Funcionalidades Operacionales
+
+Información General
+
+- Sprint: Sprint 2
+- Duración: 3 semanas
+- Objetivo del Sprint: Implementar el flujo principal de reportes, la gestión inicial de incidentes, el módulo de zonas y el sistema básico de alertas.
+
+---
+
+Objetivos del Sprint
+
+Durante este segundo sprint, el equipo se enfocará en desarrollar las funcionalidades centrales del sistema, permitiendo registrar incidentes, visualizar información operacional y administrar la estructura espacial de la planta industrial.
+
+Los objetivos específicos son:
+
+- Implementar el sistema de reportes desde la aplicación móvil.
+- Desarrollar el módulo de gestión de incidentes.
+- Implementar el gemelo digital básico de la planta.
+- Construir el sistema inicial de alertas.
+- Implementar almacenamiento de archivos e imágenes.
+- Desarrollar el sistema de comentarios y eventos.
+- Integrar completamente frontend y backend.
+
+---
+
+Product Backlog Seleccionado
+
+ID| Historia de Usuario| Prioridad
+HU-06| Como trabajador, deseo reportar incidentes desde la aplicación móvil| Alta
+HU-07| Como supervisor, deseo visualizar y gestionar incidentes| Alta
+HU-08| Como administrador, deseo definir zonas de la planta| Alta
+HU-09| Como supervisor, deseo recibir alertas relevantes| Alta
+HU-10| Como usuario, deseo consultar el historial de eventos| Media
+HU-11| Como supervisor, deseo agregar comentarios a los incidentes| Media
+
+---
+
+Actividades Planificadas
+
+Semana 1: Sistema de Reportes
+
+Durante la primera semana se implementará el flujo principal de generación de reportes.
+
+Backend
+
+Se desarrollará el microservicio reports-service, implementando:
+
+- Endpoint de creación de reportes.
+- Endpoint de consulta de reportes.
+- Validación de permisos de usuario.
+- Generación de identificadores únicos.
+- Integración con Firestore.
+- Registro de eventos asociados.
+- Gestión de estados iniciales.
+
+Además, se implementará la integración con Google Cloud Storage para el almacenamiento de fotografías y archivos adjuntos.
+
+Aplicación Móvil
+
+Se desarrollará el flujo completo de reporte:
+
+- Selección del tipo de incidente.
+- Captura de fotografía.
+- Obtención de geolocalización.
+- Selección de área.
+- Ingreso de descripción.
+- Confirmación de envío.
+
+Asimismo, se implementará el mecanismo de funcionamiento offline mediante almacenamiento local y sincronización automática posterior.
+
+Entregables:
+
+- Creación de reportes operativa.
+- Almacenamiento de fotografías funcional.
+- Sincronización offline implementada.
+- Persistencia en Firestore operativa.
+
+---
+
+Semana 2: Gestión de Incidentes
+
+Durante la segunda semana se desarrollará el módulo principal de gestión de incidentes.
+
+Backend
+
+Se implementará el microservicio incidents-service, incluyendo:
+
+- Creación de incidentes.
+- Consulta de incidentes.
+- Actualización de estados.
+- Gestión de acciones correctivas.
+- Registro de eventos históricos.
+- Sistema de comentarios.
+- Transacciones en Firestore.
+
+Frontend Web
+
+Se desarrollarán las siguientes interfaces:
+
+- Tabla de incidentes.
+- Filtros avanzados.
+- Vista detallada de incidentes.
+- Timeline de eventos.
+- Gestión de acciones correctivas.
+- Sistema de comentarios.
+
+El sistema implementará trazabilidad completa mediante event sourcing, permitiendo reconstruir el historial completo de cada incidente.
+
+Entregables:
+
+- Gestión de incidentes funcional.
+- Timeline de eventos implementado.
+- Sistema de comentarios operativo.
+- Acciones correctivas habilitadas.
+
+---
+
+Semana 3: Gemelo Digital y Alertas
+
+La tercera semana estará orientada a la visualización espacial y generación de alertas.
+
+Zones Service
+
+Se implementará el microservicio zones-service, incluyendo:
+
+- Creación de zonas.
+- Edición de polígonos.
+- Carga de planos industriales.
+- Asociación de áreas operativas.
+- Persistencia de coordenadas.
+
+Frontend Web
+
+Se desarrollará el editor gráfico de zonas mediante:
+
+- Visualización del plano industrial.
+- Herramientas de dibujo.
+- Edición de polígonos.
+- Selección de colores.
+- Gestión de capas.
+
+Alerts Service
+
+Se implementará el sistema inicial de alertas:
+
+- Alertas manuales.
+- Alertas automáticas.
+- Alertas por zonas.
+- Alertas por incidentes críticos.
+- Gestión de estados de alerta.
+
+Notificaciones
+
+Se integrarán:
+
+- Firebase Cloud Messaging.
+- Notificaciones push.
+- Actualizaciones en tiempo real.
+
+Entregables:
+
+- Gemelo digital funcional.
+- Sistema de alertas operativo.
+- Notificaciones push implementadas.
+- Gestión espacial de la planta disponible.
+
+---
+
+Sprint Backlog
+
+Tarea| Responsable| Estado
+Implementación reports-service| Backend| Pendiente
+Integración Cloud Storage| Backend| Pendiente
+Flujo de reporte móvil| Mobile| Pendiente
+Implementación incidents-service| Backend| Pendiente
+Tabla de incidentes| Frontend| Pendiente
+Sistema de comentarios| Backend| Pendiente
+Implementación zones-service| Backend| Pendiente
+Editor gráfico de zonas| Frontend| Pendiente
+Implementación alerts-service| Backend| Pendiente
+Notificaciones push| Mobile| Pendiente
+
+---
+
+Definition of Done (DoD)
+
+El Sprint 2 se considerará finalizado cuando:
+
+- Los trabajadores puedan crear reportes desde la aplicación móvil.
+- Los supervisores puedan visualizar y gestionar incidentes.
+- Las fotografías se almacenen correctamente en Cloud Storage.
+- El sistema funcione en modo offline.
+- El gemelo digital de la planta permita definir zonas.
+- El sistema de alertas genere notificaciones.
+- El historial de eventos registre todas las acciones realizadas.
+- La integración entre frontend, backend y servicios cloud sea completamente funcional.
+
+---
+
+Incremento Entregado
+
+Al finalizar el Sprint 2, el sistema SSO dispondrá de su núcleo operacional completamente implementado, permitiendo registrar incidentes desde terreno, gestionar eventos de seguridad, administrar zonas industriales y generar alertas automáticas, constituyendo la primera versión funcional integral del producto.
+
+
+
+Sprint 3: Analítica, Visualización y Generación de Reportes
+
+Información General
+
+- Sprint: Sprint 3
+- Duración: 3 semanas
+- Objetivo del Sprint: Implementar los módulos de visualización analítica, dashboards ejecutivos, mapas de calor, métricas de riesgo y generación de reportes exportables.
+
+---
+
+Objetivos del Sprint
+
+Durante este tercer sprint, el equipo se enfocará en transformar la información operacional generada durante los sprints anteriores en conocimiento útil para la toma de decisiones.
+
+Los objetivos específicos son:
+
+- Implementar dashboards ejecutivos.
+- Desarrollar el sistema de indicadores clave de desempeño (KPIs).
+- Construir mapas de calor y visualizaciones espaciales.
+- Implementar métricas y tendencias de riesgo.
+- Desarrollar el sistema de exportación de reportes.
+- Optimizar consultas y mecanismos de caché.
+- Incorporar herramientas avanzadas de monitoreo y observabilidad.
+
+---
+
+Product Backlog Seleccionado
+
+ID| Historia de Usuario| Prioridad
+HU-12| Como supervisor, deseo visualizar indicadores de seguridad| Alta
+HU-13| Como analista, deseo generar mapas de calor| Alta
+HU-14| Como administrador, deseo exportar reportes en distintos formatos| Alta
+HU-15| Como supervisor, deseo analizar tendencias temporales| Alta
+HU-16| Como usuario, deseo visualizar estadísticas operacionales| Media
+HU-17| Como administrador, deseo monitorear el estado del sistema| Media
+
+---
+
+Actividades Planificadas
+
+Semana 1: Dashboard e Indicadores
+
+Durante la primera semana se desarrollará el sistema principal de visualización y análisis.
+
+Backend
+
+Se implementará el microservicio dashboard-service, incorporando:
+
+- Cálculo de KPIs.
+- Estadísticas por período.
+- Indicadores por zona.
+- Indicadores por área operativa.
+- Métricas de incidentes críticos.
+- Tendencias históricas.
+- Cálculo de tasas de riesgo.
+- Implementación de caché temporal.
+
+Asimismo, se desarrollarán mecanismos de agregación y procesamiento de datos provenientes de Firestore.
+
+Frontend Web
+
+Se desarrollarán los componentes visuales del dashboard:
+
+- Tarjetas KPI.
+- Gráficos estadísticos.
+- Panel ejecutivo principal.
+- Indicadores comparativos.
+- Filtros temporales.
+- Paneles de resumen.
+
+Los dashboards permitirán visualizar información operacional consolidada en tiempo real.
+
+Entregables:
+
+- Dashboard principal funcional.
+- KPIs implementados.
+- Estadísticas operacionales disponibles.
+- Sistema de caché operativo.
+
+---
+
+Semana 2: Mapas de Calor y Analítica Espacial
+
+Durante la segunda semana se implementarán las herramientas avanzadas de visualización espacial.
+
+Backend
+
+Se desarrollarán los algoritmos necesarios para:
+
+- Cálculo de densidad de incidentes.
+- Agrupación espacial.
+- Ponderación de riesgos.
+- Clasificación de zonas críticas.
+- Generación de datos para heatmaps.
+
+Frontend Web
+
+Se implementará la visualización del gemelo digital enriquecido mediante:
+
+- Heatmaps dinámicos.
+- Gradientes de riesgo.
+- Visualización por capas.
+- Filtros espaciales.
+- Filtros temporales.
+- Representación gráfica de tendencias.
+
+El sistema permitirá identificar visualmente las áreas con mayor concentración de incidentes y riesgo operacional.
+
+Analítica
+
+Se desarrollarán indicadores como:
+
+- Tasa de incidentes por área.
+- Frecuencia de eventos.
+- Severidad acumulada.
+- Tiempo promedio de resolución.
+- Evolución temporal del riesgo.
+- Distribución espacial de eventos.
+
+Entregables:
+
+- Sistema de heatmaps operativo.
+- Analítica espacial implementada.
+- Métricas avanzadas disponibles.
+- Visualización interactiva funcional.
+
+---
+
+Semana 3: Exportaciones y Observabilidad
+
+La tercera semana estará orientada a generación documental y monitoreo del sistema.
+
+Export Service
+
+Se implementará el microservicio export-service, incorporando:
+
+- Exportación PDF.
+- Exportación XLSX.
+- Exportación CSV.
+- Generación asíncrona de reportes.
+- Almacenamiento temporal.
+- Descarga segura mediante URLs firmadas.
+
+Los reportes incluirán:
+
+- Indicadores.
+- Gráficos.
+- Estadísticas.
+- Historial de incidentes.
+- Mapas de calor.
+- Resúmenes ejecutivos.
+
+Observabilidad y Monitoreo
+
+Se implementarán herramientas de monitoreo para:
+
+- Logging estructurado.
+- Métricas operacionales.
+- Trazabilidad distribuida.
+- Monitoreo de microservicios.
+- Seguimiento de errores.
+- Auditoría de usuarios.
+
+Optimización
+
+Se realizarán actividades de optimización orientadas a:
+
+- Reducción de latencia.
+- Optimización de consultas.
+- Implementación de índices.
+- Configuración de cachés.
+- Ajustes de escalabilidad automática.
+
+Entregables:
+
+- Sistema de exportaciones funcional.
+- Reportes PDF y Excel operativos.
+- Plataforma de monitoreo implementada.
+- Sistema optimizado para producción.
+
+---
+
+Sprint Backlog
+
+Tarea| Responsable| Estado
+Implementación dashboard-service| Backend| Pendiente
+Desarrollo de KPIs| Backend| Pendiente
+Dashboard ejecutivo| Frontend| Pendiente
+Sistema de gráficos| Frontend| Pendiente
+Algoritmos de heatmaps| Backend| Pendiente
+Visualización espacial| Frontend| Pendiente
+Implementación export-service| Backend| Pendiente
+Generación PDF/XLSX| Backend| Pendiente
+Logging y monitoreo| DevOps| Pendiente
+Optimización de consultas| Backend| Pendiente
+
+---
+
+Definition of Done (DoD)
+
+El Sprint 3 se considerará finalizado cuando:
+
+- Los dashboards presenten información en tiempo real.
+- Los KPIs sean calculados correctamente.
+- Los mapas de calor funcionen sobre el gemelo digital.
+- Las métricas de riesgo estén disponibles.
+- Los reportes PDF y XLSX puedan generarse exitosamente.
+- El sistema de monitoreo registre eventos y errores.
+- Las consultas críticas se encuentren optimizadas.
+- La plataforma soporte la carga operacional esperada.
+
+---
+
+Incremento Entregado
+
+Al finalizar el Sprint 3, el sistema SSO dispondrá de capacidades avanzadas de análisis y apoyo a la toma de decisiones, permitiendo transformar datos operacionales en información estratégica mediante dashboards ejecutivos, mapas de calor, indicadores de riesgo y generación automatizada de reportes, consolidando la plataforma como una herramienta integral de gestión de riesgos industriales.
+
+
+Sprint 4: Optimización, Seguridad y Despliegue Productivo
+
+Información General
+
+- Sprint: Sprint 4
+- Duración: 3 semanas
+- Objetivo del Sprint: Realizar la validación integral del sistema, optimizar el rendimiento, fortalecer la seguridad, completar la documentación y preparar el despliegue productivo de la plataforma SSO.
+
+---
+
+Objetivos del Sprint
+
+Durante este cuarto sprint, el equipo se enfocará en asegurar la estabilidad, seguridad y mantenibilidad del sistema antes de su puesta en producción.
+
+Los objetivos específicos son:
+
+- Implementar pruebas integrales del sistema.
+- Fortalecer los mecanismos de seguridad.
+- Optimizar el rendimiento de backend y frontend.
+- Completar la observabilidad y auditoría.
+- Generar documentación técnica y de usuario.
+- Realizar pruebas de aceptación.
+- Preparar el despliegue en producción.
+
+---
+
+Product Backlog Seleccionado
+
+ID| Historia de Usuario| Prioridad
+HU-18| Como administrador, deseo garantizar la seguridad del sistema| Alta
+HU-19| Como usuario, deseo que la aplicación responda eficientemente| Alta
+HU-20| Como equipo de desarrollo, deseamos validar la calidad del software| Alta
+HU-21| Como administrador, deseo disponer de documentación técnica| Alta
+HU-22| Como usuario final, deseo utilizar un sistema estable y confiable| Alta
+HU-23| Como organización, deseo desplegar el sistema en producción| Alta
+
+---
+
+Actividades Planificadas
+
+Semana 1: Testing Integral y Validación
+
+Durante la primera semana se ejecutará el proceso completo de aseguramiento de calidad.
+
+Testing Backend
+
+Se implementarán y ejecutarán:
+
+- Tests unitarios.
+- Tests de integración.
+- Tests de endpoints REST.
+- Tests de autenticación.
+- Tests de permisos y roles.
+- Tests de almacenamiento.
+- Tests de exportación.
+
+Asimismo, se verificará el cumplimiento del objetivo mínimo de cobertura de código establecido para el proyecto.
+
+Testing Frontend
+
+Se realizarán pruebas sobre:
+
+- Navegación.
+- Formularios.
+- Validaciones.
+- Flujos de usuario.
+- Manejo de errores.
+- Integración con backend.
+
+Testing Funcional
+
+Se desarrollarán escenarios de prueba para validar:
+
+- Registro de incidentes.
+- Gestión de alertas.
+- Administración de zonas.
+- Generación de dashboards.
+- Exportación de reportes.
+- Funcionamiento offline.
+
+Entregables:
+
+- Suite completa de pruebas ejecutada.
+- Reportes de cobertura generados.
+- Corrección de defectos críticos.
+- Validación funcional completa.
+
+---
+
+Semana 2: Seguridad y Optimización
+
+Durante la segunda semana se ejecutarán actividades orientadas al hardening del sistema.
+
+Seguridad
+
+Se implementarán y verificarán:
+
+- Validación exhaustiva de entradas.
+- Restricciones CORS.
+- Control de acceso basado en roles.
+- Protección mediante HTTPS/TLS.
+- Gestión segura de credenciales.
+- Validación de permisos entre microservicios.
+- Auditoría de operaciones.
+- Generación de URLs firmadas para archivos privados.
+
+Además, se realizarán pruebas orientadas a detectar:
+
+- Accesos no autorizados.
+- Errores de autenticación.
+- Escalamiento indebido de privilegios.
+- Exposición de datos sensibles.
+
+Optimización Backend
+
+Se realizarán actividades de optimización sobre:
+
+- Consultas Firestore.
+- Índices compuestos.
+- Estrategias de caché.
+- Escalamiento automático.
+- Consumo de memoria.
+- Tiempo de respuesta.
+
+Optimización Frontend
+
+Se optimizarán:
+
+- Renderizado de componentes.
+- Gestión de estado.
+- Carga diferida.
+- Caché local.
+- Tamaño de bundles.
+- Experiencia móvil.
+
+Entregables:
+
+- Auditoría de seguridad aprobada.
+- Sistema optimizado.
+- Rendimiento validado.
+- Reducción de latencia operativa.
+
+---
+
+Semana 3: Documentación y Despliegue Productivo
+
+La última semana del proyecto estará orientada a la preparación de la entrega final.
+
+Documentación Técnica
+
+Se elaborará la documentación correspondiente a:
+
+- Arquitectura general del sistema.
+- Arquitectura backend.
+- Arquitectura frontend.
+- Modelo de datos.
+- APIs REST.
+- Infraestructura cloud.
+- Configuración de despliegue.
+- Manual de mantenimiento.
+
+Documentación de Usuario
+
+Se desarrollarán:
+
+- Manual del trabajador.
+- Manual del supervisor.
+- Manual del administrador.
+- Guías operacionales.
+- Procedimientos de recuperación.
+
+DevOps y Producción
+
+Se realizará:
+
+- Configuración del entorno productivo.
+- Configuración de dominios.
+- Configuración de certificados.
+- Configuración de monitoreo.
+- Configuración de alertas.
+- Despliegue final en Cloud Run.
+- Validación post-despliegue.
+
+Cierre del Proyecto
+
+Se ejecutarán las siguientes actividades:
+
+- Sprint Review.
+- Sprint Retrospective.
+- Entrega de documentación.
+- Capacitación inicial.
+- Presentación final del sistema.
+
+Entregables:
+
+- Documentación completa.
+- Sistema desplegado en producción.
+- Manuales de usuario.
+- Monitoreo operativo.
+- Entrega final del proyecto.
+
+---
+
+Sprint Backlog
+
+Tarea| Responsable| Estado
+Testing backend| Backend/QA| Pendiente
+Testing frontend| Frontend/QA| Pendiente
+Testing funcional| QA| Pendiente
+Hardening de seguridad| Backend| Pendiente
+Optimización Firestore| Backend| Pendiente
+Optimización frontend| Frontend| Pendiente
+Documentación técnica| Arquitectura| Pendiente
+Manuales de usuario| Equipo funcional| Pendiente
+Configuración producción| DevOps| Pendiente
+Despliegue final| DevOps| Pendiente
+
+---
+
+Definition of Done (DoD)
+
+El Sprint 4 se considerará finalizado cuando:
+
+- La cobertura de pruebas alcance el objetivo establecido.
+- No existan defectos críticos abiertos.
+- Las auditorías de seguridad hayan sido aprobadas.
+- El rendimiento cumpla los requisitos definidos.
+- La documentación técnica esté completa.
+- Los manuales de usuario hayan sido elaborados.
+- El sistema se encuentre desplegado en producción.
+- El monitoreo y observabilidad estén operativos.
+- Los usuarios clave hayan validado el funcionamiento del sistema.
+
+---
+
+Incremento Entregado
+
+Al finalizar el Sprint 4, el sistema SSO dispondrá de una plataforma completamente funcional, segura, optimizada y preparada para operación productiva. El proyecto contará con infraestructura cloud desplegada, arquitectura de microservicios operativa, aplicaciones web y móvil funcionales, capacidades analíticas avanzadas, mecanismos de seguridad robustos y documentación integral, permitiendo su utilización en entornos industriales reales.
 
 
 ## Licencia
