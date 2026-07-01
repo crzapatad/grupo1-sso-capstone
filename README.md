@@ -208,17 +208,6 @@ Durante este primer sprint, el equipo se enfocará en construir las bases tecnol
 
 ---
 
-Product Backlog Seleccionado
-
-ID| Historia de Usuario| Prioridad
-HU-01| Como administrador, deseo autenticar usuarios para garantizar acceso seguro al sistema| Alta
-HU-02| Como desarrollador, deseo disponer de la arquitectura base de microservicios para facilitar el desarrollo futuro| Alta
-HU-03| Como usuario, deseo visualizar una interfaz inicial de acceso al sistema| Alta
-HU-04| Como administrador, deseo disponer de infraestructura cloud configurada para desplegar los servicios| Alta
-HU-05| Como equipo de desarrollo, deseamos automatizar el proceso de integración y despliegue| Media
-
----
-
 Actividades Planificadas
 
 Semana 1: Configuración Inicial e Infraestructura
@@ -375,17 +364,6 @@ Los objetivos específicos son:
 
 ---
 
-Product Backlog Seleccionado
-
-ID| Historia de Usuario| Prioridad
-HU-06| Como trabajador, deseo reportar incidentes desde la aplicación móvil| Alta
-HU-07| Como supervisor, deseo visualizar y gestionar incidentes| Alta
-HU-08| Como administrador, deseo definir zonas de la planta| Alta
-HU-09| Como supervisor, deseo recibir alertas relevantes| Alta
-HU-10| Como usuario, deseo consultar el historial de eventos| Media
-HU-11| Como supervisor, deseo agregar comentarios a los incidentes| Media
-
----
 
 Actividades Planificadas
 
@@ -562,18 +540,6 @@ Los objetivos específicos son:
 - Desarrollar el sistema de exportación de reportes.
 - Optimizar consultas y mecanismos de caché.
 - Incorporar herramientas avanzadas de monitoreo y observabilidad.
-
----
-
-Product Backlog Seleccionado
-
-ID| Historia de Usuario| Prioridad
-HU-12| Como supervisor, deseo visualizar indicadores de seguridad| Alta
-HU-13| Como analista, deseo generar mapas de calor| Alta
-HU-14| Como administrador, deseo exportar reportes en distintos formatos| Alta
-HU-15| Como supervisor, deseo analizar tendencias temporales| Alta
-HU-16| Como usuario, deseo visualizar estadísticas operacionales| Media
-HU-17| Como administrador, deseo monitorear el estado del sistema| Media
 
 ---
 
@@ -767,17 +733,6 @@ Los objetivos específicos son:
 
 ---
 
-Product Backlog Seleccionado
-
-ID| Historia de Usuario| Prioridad
-HU-18| Como administrador, deseo garantizar la seguridad del sistema| Alta
-HU-19| Como usuario, deseo que la aplicación responda eficientemente| Alta
-HU-20| Como equipo de desarrollo, deseamos validar la calidad del software| Alta
-HU-21| Como administrador, deseo disponer de documentación técnica| Alta
-HU-22| Como usuario final, deseo utilizar un sistema estable y confiable| Alta
-HU-23| Como organización, deseo desplegar el sistema en producción| Alta
-
----
 
 Actividades Planificadas
 
