@@ -25,7 +25,7 @@ Asimismo, disponemos de un wireframe para ambas aplicaciones, siguiendo el dise�
 
 ## Características Principales
 
-Las principales características que tiene este proyecto son las siguientes:
+Para solucionar los problemas señalados inicialmente, el proyecto requiere tener listo estas  características principales que son las siguientes:
 
 - **Reporte de Peligros de Seguridad**: Los trabajadores pueden reportar actos inseguros y condiciones inseguras mediante fotografías, ubicación geográfica y descripciones detalladas.
 
