@@ -53,7 +53,7 @@ Para solucionar los problemas señalados inicialmente, el proyecto requiere tene
 - **Modo oscuro**: Interfaz diseñada específicamente con una temática oscura y acentos en color naranja de seguridad, optimizando la visibilidad y la experiencia de uso en entornos industriales.
 
 
-## Stack Tecnológico
+## Stack Tecnológico para el proyecto
 
 
 ### Backend
