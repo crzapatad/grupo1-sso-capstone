@@ -57,36 +57,36 @@ Para solucionar los problemas señalados inicialmente, el proyecto requiere tene
 
 El stack tecnológico consiste en 5 puntos principales:
 
--Backend
+-**Backend**
 
--Frontend (página web)
+-**Frontend (página web)**
 
--Frontend (app móvil)
+-**Frontend (app móvil)**
 
--Base de datos
+-**Base de datos**
 
--Modelo de datos
+-**Modelo de datos**
 
 
-### Backend
+### 1) Backend
 
 El backend del Sistema Integral de Gestión de Riesgos (SSO) constituye el núcleo operativo de la plataforma, siendo responsable de procesar la información proveniente de las aplicaciones web y móviles, ejecutar la lógica de negocio, gestionar la seguridad del sistema y coordinar el almacenamiento de datos y archivos. La arquitectura implementada se basa en un modelo de microservicios desplegados sobre infraestructura cloud, lo que permite alcanzar altos niveles de escalabilidad, disponibilidad y mantenibilidad.
 
 ![Pantalla de Login](images/stack2.png)
 
 
-### Frontend (Página web)
+### 2) Frontend (Página web)
 
 El frontend constituye la capa de interacción entre los usuarios y la plataforma, proporcionando interfaces especializadas para distintos perfiles operativos y administrativos. La arquitectura frontend fue diseñada bajo un enfoque multiplataforma, compuesto por una aplicación web orientada a la gestión y supervisión, y una aplicación móvil destinada al personal operativo en terreno. Ambas aplicaciones comparten principios de diseño, contratos de API y mecanismos de autenticación, permitiendo mantener coherencia funcional y facilitar la evolución del sistema.
 ![Pantalla de Login](images/stack3.png)
 
-### Frontend (App móvil)
+### 3) Frontend (App móvil)
 
 El frontend de la aplicación móvil está desarrollada con React Native y TypeScript. Su función es proporcionar una interfaz intuitiva para que trabajadores y supervisores puedan registrar, consultar y dar seguimiento a reportes de riesgos. Además, integra funcionalidades como autenticación, captura de evidencias fotográficas, geolocalización, notificaciones y funcionamiento offline, comunicándose de forma segura con el backend mediante servicios web.
 ![Pantalla de Login](images/stack4.png) 
 
 
-### Base de Datos
+### 4) Base de Datos
 - Para este proyecto usamos Cloud Firestore como sistema de gestión de bases de datos. Firestore es una base de datos NoSQL, encargada de almacenar datos no estructurados (como contenido multimedia, imágenes) que forma parte del ecosistema de Google Cloud Platform (GCP). Hemos escogido Firestore debido a su escalabilidad y su capacidad de almacenamiento para los reportes, además de que nuestro proyecto es un SaaS (software como un servicio).
 
 Una de las principales ventajas de Firestore es su capacidad de escalamiento horizontal automático. El escalamiento horizontal automático de Firestore significa que, si la aplicación crece y comienzan a utilizarla muchas más empresas y usuarios, Google aumenta la capacidad necesaria detrás de escena sin que nosotros tengamos que preocuparnos por administrar servidores adicionales.
@@ -96,7 +96,7 @@ Adicionalmente, Firestore ofrece integración nativa con servicios de Google Clo
 La plataforma también incorpora capacidades de sincronización en tiempo real mediante listeners, permitiendo que los cambios en los reportes, alertas o acciones correctivas se reflejen instantáneamente en las interfaces de usuario sin necesidad de consultas periódicas al servidor.
 
 
-## Modelos de Datos
+## 5) Modelos de Datos
 
 La estructura de Firestore se organiza utilizando un esquema jerárquico basado en colecciones y subcolecciones. En el nivel superior se encuentra la colección clients, donde cada documento representa una organización cliente del sistema. Este enfoque permite implementar un modelo multi-tenant, asegurando la separación lógica de los datos entre distintas empresas.
 
