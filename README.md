@@ -69,9 +69,11 @@ El stack tecnológico consiste en 5 puntos principales:
 
 
 ### Backend
-![Pantalla de Login](images/stack2.png)
-- 
+
 El backend del Sistema Integral de Gestión de Riesgos (SSO) constituye el núcleo operativo de la plataforma, siendo responsable de procesar la información proveniente de las aplicaciones web y móviles, ejecutar la lógica de negocio, gestionar la seguridad del sistema y coordinar el almacenamiento de datos y archivos. La arquitectura implementada se basa en un modelo de microservicios desplegados sobre infraestructura cloud, lo que permite alcanzar altos niveles de escalabilidad, disponibilidad y mantenibilidad.
+
+![Pantalla de Login](images/stack2.png)
+
 
 ### Frontend (Página web)
 
