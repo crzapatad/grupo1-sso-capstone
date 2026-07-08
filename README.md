@@ -28,7 +28,7 @@ Asimismo, disponemos de un wireframe para ambas aplicaciones, siguiendo el dise�
 2) permite una comunicación más eficaz y rápida entre los actores señalados que son el trabajador y el supervisor. 
 
 
-## Características Principales
+## ¿Cuáles son las características principales de este proyecto? 
 
 Para solucionar los problemas señalados inicialmente, el proyecto requiere tener listo estas  características principales que son las siguientes:
 
