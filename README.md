@@ -6,7 +6,7 @@ El proyecto consiste en la creación de un sistema  integral para la gestión de
 
 
 
-# ¿Cuál es el problema con esto? 
+**¿Cuál es el problema con esto?**
 
 Que todo este proceso consume tiempo, requiere logística y que la trazabilidad no es del todo seguro. Asimismo, el proceso descrito depende de objetos fisicos como los registros en papel, y no hay una base de datos que albergue dichos registros, y a la vez, consultar, actualizar, seleccionar o eliminar. Al haber dependencia de objetos físicos, ello requiere salvaguardarlos de una forma más engorrosa, y al acumularse con el tiempo, resulta más dificil consultar en un futuro un determinado reporte.
 
