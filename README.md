@@ -132,13 +132,13 @@ Cada componente del sistema dispone únicamente de los permisos estrictamente ne
 
 **Validación de Entradas**
 
-Toda la información ingresada por los usuarios es validada antes de ser procesada por la lógica de negocio. Para ello se emplean modelos de validación definidos mediante Pydantic, verificando tipos de datos, formatos y restricciones de contenido. Esta medida ayuda a prevenir errores de procesamiento, inconsistencias de datos y diversos tipos de ataques basados en entradas maliciosas.
+Toda la información ingresada por los usuarios es validada antes de ser procesada por la lógica de negocio. Para ello se emplean modelos de validación, verificando tipos de datos, formatos y restricciones de contenido. Esta medida ayuda a prevenir errores de procesamiento, inconsistencias de datos y diversos tipos de ataques basados en entradas maliciosas.
 
-**Auditoría y Trazabilidad**
+**Trazabilidad**
 
 El sistema mantiene registros estructurados de las acciones realizadas por los usuarios y servicios. Operaciones como creación, modificación, actualización de estados y asignación de acciones correctivas generan eventos de auditoría que incluyen información como identificador de usuario, organización cliente, fecha, hora, acción ejecutada y resultado obtenido. Estos registros permiten realizar análisis posteriores, investigaciones y procesos de cumplimiento normativo.
 
-**Control de Acceso mediante CORS**
+**Control de Acceso**
 
 La API implementa políticas CORS (Cross-Origin Resource Sharing) para restringir el acceso únicamente a los dominios autorizados del frontend web y la aplicación móvil. En ambientes de desarrollo se permite el acceso desde localhost para facilitar las pruebas, mientras que en producción se aplican restricciones más estrictas para evitar solicitudes provenientes de orígenes no autorizados.
 
@@ -182,7 +182,7 @@ La arquitectura planteada proporciona múltiples beneficios para la organizació
 - Alta disponibilidad de la plataforma.
 - Facilidad de mantenimiento y evolución.
 - Despliegue independiente de componentes.
-- Mayor seguridad mediante autenticación centralizada.
+- Mayor seguridad mediante autenticación.
 - Trazabilidad completa de eventos e incidentes.
 - Integración sencilla con sistemas externos.
 - Soporte para crecimiento futuro del número de usuarios y organizaciones.
@@ -249,15 +249,15 @@ Información General
 
 
 
-Cierre
+### Cierre
 En la semana 14 se dedica exclusivamente a:
-Integración final del sistema.
-Pruebas funcionales.
-Corrección de incidencias detectadas.
-Validación del cumplimiento de requisitos.
-Elaboración y revisión de la documentación técnica.
-Preparación de la presentación y defensa del Capstone.
-Entrega final del proyecto.
+- Integración final del sistema.
+- Pruebas funcionales.
+- Corrección de incidencias detectadas.
+- Validación del cumplimiento de requisitos.
+- Elaboración y revisión de la documentación técnica.
+- Preparación de la presentación y defensa del Capstone.
+- Entrega final del proyecto.
 
 
 ## Integrantes
