@@ -185,42 +185,6 @@ El proyecto fue desarrollado siguiendo una metodología ágil basada en Scrum, p
 
 
 
-Semana 1 (Antes del Sprint 1)
-
-Planificación inicial
-
-Esta semana no pertenece a ningún Sprint.
-
-Actividades
-
-Levantamiento de requerimientos.
-
-Definición del alcance y objetivos.
-
-Elaboración de historias de usuario.
-
-Diseño de la arquitectura.
-
-Diseño de la base de datos.
-
-Elaboración de wireframes.
-
-Configuración del entorno de desarrollo.
-
-Carta_Gantt_Proyecto_SSO.xlsx.xlsx.pdf
-
-Entregables
-
-Product Backlog.
-
-Wireframes.
-
-Modelo de datos inicial.
-Arquitectura.
-
-Carta Gantt.
-
-
 
 
 ## Sprint 1: Fundación Arquitectónica e Infraestructura Base
@@ -255,10 +219,7 @@ Información General
 - Objetivo del Sprint: Implementar los módulos de visualización analítica, dashboards ejecutivos, mapas de calor, métricas de riesgo y generación de reportes exportables.
 
 
-
  
-
-
 
 
 ## Sprint 4: Optimización, Seguridad y Despliegue Productivo
@@ -271,7 +232,15 @@ Información General
 
 
 
-
+Cierre
+En la semana 14 se dedica exclusivamente a:
+Integración final del sistema.
+Pruebas funcionales.
+Corrección de incidencias detectadas.
+Validación del cumplimiento de requisitos.
+Elaboración y revisión de la documentación técnica.
+Preparación de la presentación y defensa del Capstone.
+Entrega final del proyecto.
 
 
 ## Licencia
