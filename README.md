@@ -184,6 +184,45 @@ En conjunto, esta arquitectura permite construir una plataforma robusta, moderna
 El proyecto fue desarrollado siguiendo una metodología ágil basada en Scrum, permitiendo la construcción incremental de la solución y la incorporación continua de mejoras a medida que se obtenía retroalimentación sobre el funcionamiento del sistema. Esta metodología favoreció la flexibilidad, la adaptación a cambios en los requerimientos y la validación progresiva de las funcionalidades implementadas.
 
 
+
+Semana 1 (Antes del Sprint 1)
+
+Planificación inicial
+
+Esta semana no pertenece a ningún Sprint.
+
+Actividades
+
+Levantamiento de requerimientos.
+
+Definición del alcance y objetivos.
+
+Elaboración de historias de usuario.
+
+Diseño de la arquitectura.
+
+Diseño de la base de datos.
+
+Elaboración de wireframes.
+
+Configuración del entorno de desarrollo.
+
+Carta_Gantt_Proyecto_SSO.xlsx.xlsx.pdf
+
+Entregables
+
+Product Backlog.
+
+Wireframes.
+
+Modelo de datos inicial.
+Arquitectura.
+
+Carta Gantt.
+
+
+
+
 ## Sprint 1: Fundación Arquitectónica e Infraestructura Base
 
 Información General
