@@ -12,8 +12,8 @@ Que todo este proceso consume tiempo, requiere logística y que la trazabilidad 
 
 **Solución propuesta**
 
-La solución propuesta consiste en digitalizar los procesos que hemos señalado anteriormente. Para ello, queremos elaborar una plataforma tecnológica que permita una comunicación más eficaz y rápida entre los actores señalados que son el trabajador y el supervisor. La plataforma está compuesta por una aplicacion movil (utilizada por los trabajadores) y una aplicacion web (utilizada por los supervisores), cada una diseñada con sus respectivas interfaces. Para permitir una comunicación entre estas aplicaciones, usaremos una arquitectura de microservicio (API). 
-Las funcionalidades de estas interfaces las señalaremos a continuacion para cada aplicación:
+La solución propuesta consiste en digitalizar los procesos que hemos señalado anteriormente. Para ello, queremos elaborar una plataforma tecnológica bajo el modelo SaaS (Software as a Service), permitiendo que múltiples organizaciones puedan acceder a la plataforma a través de Internet sin necesidad de instalar software local. Esto permitiría una comunicación más eficaz y rápida entre los actores señalados que son el trabajador y el supervisor. La plataforma está compuesta por una aplicacion movil (utilizada por los trabajadores) y una aplicacion web (utilizada por los supervisores), cada una diseñada con sus respectivas interfaces. Para permitir una comunicación entre estas aplicaciones, usaremos una arquitectura de microservicio (API), la cual es escalable. 
+Las funcionalidades de estas interfaces las señalaremos a continuación para cada aplicación:
 
 1) App móvil: la app movil permitirá al trabajador registrar evidencias. Podrá subir tanto imagenes como texto (ya que usaremos una base de datos no estructurada como firebase). Asimismo, el trabajador podrá iniciar sesión, determinar el nivel de gravedad de un incidente antes de enviar la evidencia, podrá hacer seguimiento de su situación en tiempo real (si está pendiente, o finalizado, cuyo estado dependerá del supervisor).
   
@@ -24,8 +24,8 @@ Asimismo, disponemos de un wireframe para ambas aplicaciones, siguiendo el dise�
 
 **Beneficios de implementar un sistema digitalizado de gestión de riesgos en faenas**
 
-1) permite a la empresa ahorrar gastos al reducir el tiempo en este proceso. 
-2) permite una comunicación más eficaz y rápida entre los actores señalados que son el trabajador y el supervisor. 
+1) Permite a la empresa ahorrar gastos al reducir el tiempo en este proceso. 
+2) Permite una comunicación más eficaz y rápida entre los actores señalados que son el trabajador y el supervisor. 
 
 
 ## ¿Cuáles son las características principales de este proyecto? 
