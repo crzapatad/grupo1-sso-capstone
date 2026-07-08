@@ -96,7 +96,7 @@ Adicionalmente, Firestore ofrece integración nativa con servicios de Google Clo
 La plataforma también incorpora capacidades de sincronización en tiempo real mediante listeners, permitiendo que los cambios en los reportes, alertas o acciones correctivas se reflejen instantáneamente en las interfaces de usuario sin necesidad de consultas periódicas al servidor.
 
 
-## 5) Modelos de Datos
+### 5) Modelos de Datos
 
 La estructura de Firestore se organiza utilizando un esquema jerárquico basado en colecciones y subcolecciones. En el nivel superior se encuentra la colección clients, donde cada documento representa una organización cliente del sistema. Este enfoque permite implementar un modelo multi-tenant, asegurando la separación lógica de los datos entre distintas empresas.
 
@@ -154,13 +154,7 @@ Las evidencias fotográficas asociadas a incidentes y reportes se consideran inf
 
 La combinación de cifrado de comunicaciones, autenticación basada en identidades de servicio, validación de datos, auditoría centralizada y control granular de permisos permite construir una plataforma alineada con las buenas prácticas de seguridad modernas. Esta estrategia contribuye a proteger la información operacional de las organizaciones, asegurar la trazabilidad de las acciones realizadas y reducir los riesgos asociados a accesos no autorizados o manipulaciones de datos.
 
-## Integrantes
 
-**CAPSTONE_001D - Grupo 1**
-
-- Sean Parker
-- Tomás Figueroa
-- Cristóbal Zapata
 
 ## Documentación Adicional
 
@@ -264,6 +258,15 @@ Validación del cumplimiento de requisitos.
 Elaboración y revisión de la documentación técnica.
 Preparación de la presentación y defensa del Capstone.
 Entrega final del proyecto.
+
+
+## Integrantes
+
+**CAPSTONE_001D - Grupo 1**
+
+- Sean Parker
+- Tomás Figueroa
+- Cristóbal Zapata
 
 
 ## Licencia
