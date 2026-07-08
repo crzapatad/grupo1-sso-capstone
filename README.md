@@ -63,11 +63,14 @@ El backend del Sistema Integral de Gestión de Riesgos (SSO) constituye el núcl
 
 ### Frontend (Página web)
 
-El frontend del Sistema Integral de Gestión de Riesgos (SSO) constituye la capa de interacción entre los usuarios y la plataforma, proporcionando interfaces especializadas para distintos perfiles operativos y administrativos. La arquitectura frontend fue diseñada bajo un enfoque multiplataforma, compuesto por una aplicación web orientada a la gestión y supervisión, y una aplicación móvil destinada al personal operativo en terreno. Ambas aplicaciones comparten principios de diseño, contratos de API y mecanismos de autenticación, permitiendo mantener coherencia funcional y facilitar la evolución del sistema.
+El frontend constituye la capa de interacción entre los usuarios y la plataforma, proporcionando interfaces especializadas para distintos perfiles operativos y administrativos. La arquitectura frontend fue diseñada bajo un enfoque multiplataforma, compuesto por una aplicación web orientada a la gestión y supervisión, y una aplicación móvil destinada al personal operativo en terreno. Ambas aplicaciones comparten principios de diseño, contratos de API y mecanismos de autenticación, permitiendo mantener coherencia funcional y facilitar la evolución del sistema.
 ![Pantalla de Login](images/stack3.png)
 
 ### Frontend (App móvil)
+
+El frontend de la aplicación móvil está desarrollada con React Native y TypeScript. Su función es proporcionar una interfaz intuitiva para que trabajadores y supervisores puedan registrar, consultar y dar seguimiento a reportes de riesgos. Además, integra funcionalidades como autenticación, captura de evidencias fotográficas, geolocalización, notificaciones y funcionamiento offline, comunicándose de forma segura con el backend mediante servicios web.
 ![Pantalla de Login](images/stack4.png) 
+
 
 ### Base de Datos
 - Para este proyecto usamos Cloud Firestore como sistema de gestión de bases de datos. Firestore es una base de datos NoSQL, encargada de almacenar datos no estructurados (como contenido multimedia, imágenes) que forma parte del ecosistema de Google Cloud Platform (GCP). Hemos escogido Firestore debido a su escalabilidad y su capacidad de almacenamiento para los reportes, además de que nuestro proyecto es un SaaS (software como un servicio).
