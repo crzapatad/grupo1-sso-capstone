@@ -204,7 +204,7 @@ El proyecto fue desarrollado siguiendo una metodología ágil basada en Scrum, p
 
 
 
-## Sprint 1: Fundación Arquitectónica e Infraestructura Base
+### Sprint 1: Fundación Arquitectónica e Infraestructura Base
 
 Información General
 
@@ -216,7 +216,7 @@ Información General
 
 
 
-## Sprint 2: Implementación de Funcionalidades Operacionales
+### Sprint 2: Implementación de Funcionalidades Operacionales
 
 Información General
 
@@ -227,7 +227,7 @@ Información General
 
 
 
-## Sprint 3: Analítica, Visualización y Generación de Reportes
+### Sprint 3: Analítica, Visualización y Generación de Reportes
 
 Información General
 
@@ -239,7 +239,7 @@ Información General
  
 
 
-## Sprint 4: Optimización, Seguridad y Despliegue Productivo
+### Sprint 4: Optimización, Seguridad y Despliegue Productivo
 
 Información General
 
