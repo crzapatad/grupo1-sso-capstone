@@ -55,6 +55,13 @@ Para solucionar los problemas señalados inicialmente, el proyecto requiere tene
 
 ## Stack Tecnológico para el proyecto
 
+El stack tecnológico consiste en 4 puntos principales:
+
+-Frontend (página web) 
+-Frontend (app móvil) 
+-Backend
+-Modelo de datos
+
 
 ### Backend
 ![Pantalla de Login](images/stack2.png)
